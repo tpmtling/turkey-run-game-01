@@ -1,0 +1,29 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #241608;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#game {
+  display: block;
+  touch-action: none;
+  background: #ffb347;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.6);
+}
+
+/* Read aloud, never shown: the status line screen readers announce. */
+#status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
